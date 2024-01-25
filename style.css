@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border:none;
+    text-transform: capitalize;
+}
+
+.btn{
+    display: inline-block;
+    background: black;
+    margin-top:1rem;
+    color: white;
+    font-size:1.7rem;
+    padding:1rem 3rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: violet;
+}
+section{
+    padding:20px 5%;
+}
+@keyframes fadeIn{
+    0%{
+        transform:scale(0);
+        opacity: 0;
+    }
+}
+.home{
+    padding:0;
+
+}
+.home .slide{
+    text-align: center;
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 40rem;
+}
+.home .slide .content{
+    width:85rem;
+    display: none;
+}
+.home .swiper-slide-active .content{
+    display: inline-block;
+}
+.home .slide .content span{
+  display: block;
+  font-size: 2.2rem;
+  color: white;
+  padding-bottom: 1rem;
+  animation: fadeIn .4s linear backwards .4s;
+}
+.home .slide .content .btn{
+ animation: fadeIn .4s linear backwards .6s;  
+}
+
+.home .swiper-button-next,
+.home .swiper-button-prev{
+    top:inherit;
+    left:inherit;
+    bottom: 0;
+    right:0;
+    height: 7rem;
+    width:7rem;
+    background: white;
+    color: black;
+}
+.home .swiper-button-next:hover,
+.home .swiper-button-prev:hover{
+    background: violet;
+    color: white;
+}
+.home .swiper-button-next::after,
+.home .swiper-button-prev::after{
+    font-size: 2rem;
+}
+.home .swiper-button-prev{
+    right:7rem;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+
+input[type="file"] {
+    display: none; 
+}
+
+
+.btnu {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+
+.btnu:hover {
+    background-color: #2980b9;
+}
